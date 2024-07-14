@@ -2,6 +2,8 @@
 
 Research-AID is a fine-tuned AI model designed to assist with research tasks. This repository contains the code and resources necessary to deploy and use Research-AID.
 
+![Research AID Screenshot](kasawoss.com_research_.png)
+
 # Features
 
 - **Generative AI** : Uses advanced generative AI techniques.
