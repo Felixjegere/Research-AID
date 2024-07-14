@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research AID</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta
+      name="description"
+      content="Enhance the research work in this new curriculum with Research AID, using the power of AI, developed by Kasawo SS Students (Kasawo SS Developers) for Kasawo SS"
+    />
+    <meta
+      name="keywords"
+      content="research aid, kasawo ss, kasawo aid, kasawo ss aid, kasawo research aid,kasawo developers,  kssd, kasawo ss developers"
+    />
+    <meta name="author" content="Kasawo SS Developers" />
+    <meta name="author" content="Felix Jegere" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,70"
+    /
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-64x64.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="./images/favicon-160x160.ico" />
+
+    <link rel="stylesheet" href="./css/splash.css" />
+    <script src="./js/splash.js"></script>
+  </head>
+  <body>
+    <!-- Splash -->
+    <div class="splash" id="splash">
+      <img src="./images/kasawo-s-s-badge.png" alt="Kasawo SS Badge splash" />
+
+      <p>
+        Loading<span class="dot">.</span><span class="dot">.</span>
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <h3 class="title">RESEARCH AID</h3>
+        <div class="dev">
+          <img
+            src="./images/kasawo-s-s-badge.png"
+            alt="KSS Devs"
+            style="margin-right: 5px; border-radius: 5px"
+            width="40"
+            height="40"
+          />
+          <h3>KASAWO SS DEVELOPERS</h3>
+        </div>
+      </div>
+      <div class="chat-container">
+        <div class="intro">
+          <h3>Welcome to Research AID</h3>
+          <p>Your one stop aid in your reseach work, </p>
+          <p>What would you like to make research on today</p>
+          <ul>
+            <li>What conditions can bring about kidney failure?</li>
+            <li>State Ohm's Law and in which way is it applied.</li>
+            <li>Give me some Chemistry terms I can use in my usual conversations</li>
+            <li>Test me with some Maths quizes for a Senior Three student.</li>
+          </ul>
+        </div> 
+      </div>
+      <div class="input-container">
+       <div class="loader">
+         <div class="spinner"></div>
+       </div>
+        <textarea
+          placeholder="Research anything . . ."
+          class="user-input"
+        ></textarea>
+        <button class="send-button">Send</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.min.js" referrerpolicy="no-referrer"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

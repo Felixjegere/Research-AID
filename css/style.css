@@ -1,0 +1,230 @@
+:root {
+  /* Neutral*/
+  --light-gray: #f7f7f7;
+  --white: #ffffff;
+  --medium-gray: #e5e5e5;
+  --gray: #cccccc;
+  --dark-gray: #333333;
+  /* Soft Pastels */
+  --soft-pink: #ffc5c5;
+  --light-peach: #ffe4e1;
+  --soft-mint: #c9e4ca;
+  --light-coral: #ffd7be;
+  --soft-blue: #c5cae9;
+  /* Nature-Inspired */
+  --light-green: #8bc34a;
+  --teal: #4caf50;
+  --sky-blue: #2196f3;
+  --sand: #f2c464;
+  --earth-brown: #964b00;
+  /* Deep & Rich */
+  --navy-blue: #3498db;
+  --forest-green: #2ecc71;
+  --deep-purple: #9b59b6;
+  --charcoal-gray: #1a1d23;
+  --burgundy: #8e24aa;
+  /* Bold & Bright */
+  --hot-pink: #ff69b4;
+  --lime-green: #34c759;
+  --orange: #ffc107;
+  --cyan: #03a9f4;
+  --bright-red: #8f0a1a;
+}
+.header{
+  display: flex;
+  color: black;
+  padding: 12px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(127, 127, 127, 0.5);
+  height: 38px;
+}
+.dev{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: lightgreen;
+  height: 100%;
+}
+.chat-container {
+  margin: 0 20%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-bottom: 10%;
+  padding-bottom: 0 20px 50px 20px; 
+}
+.input-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: var(--medium-gray);
+  box-shadow: 11px -3px 20px 0px #ccc;
+  box-sizing: content-box;
+}
+.user-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 0 0 0 300px;
+  background: #ccc;
+  color: black;
+  font-size: 18px;
+  font-family: system-ui;
+}
+.user-input:focus {
+  padding: 15px;
+}
+.send-button {
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  background-color: var(--sky-blue);
+  color: var(--white);
+  border-radius: 5px;
+  margin: 0 300px 0 5px;
+}
+.send-button:hover {
+  opacity: 0.9;
+}
+.user{
+  align-self: flex-start;
+  background-color: #196ba3db;
+  border-radius: 0px 20px 20px 20px;
+}
+.user{
+  color: var(--white);
+  width: fit-content;
+  padding:5px 10px;
+  margin-top: 20px;
+}
+.bot{
+    margin: 6px;
+    color: var(--charcoal-gray);
+    background-color: aliceblue;
+    padding: 14px;
+    border-radius: 19px;
+} .options{display: flex;margin:12px;}.options i{padding: 12px;}
+.intro{
+    margin: 99px 0px 0px 0px;
+}
+.intro > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.intro>ul>li{
+    border-radius: 4px;
+    border: 1px solid green;
+    padding: 5px;
+    cursor: pointer;
+    background: slategray;
+    color: white;
+    margin: 4px;
+}
+.intro>ul>li:hover{
+  padding: 7px;
+}
+.intro>h3{
+   font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #0808e7,orange, #c50e0e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 0% 100%;
+    background-size: 100% 2px;
+    transition: background-position 0.5s ease-in-out;
+}
+.intro>p{
+    font-size: 26px;
+}
+.loader{
+   display: none;
+}
+.spinner{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #2196f3;
+    border-top-color: #ccc;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin{
+  0%{
+  transform: rotate(0deg);
+}
+ 100%{
+  transform: rotate(360deg);
+}
+}
+@media screen and (max-width: 850px){
+  .chat-container{
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 800px){
+  .user-input{
+    margin: 0 0 0 60px;
+  }
+  .send-button{
+    margin: 0 60px 0 5px;
+  }
+}
+@media  screen and (max-width: 550px){
+  .dev h3{
+    display: none;
+  }
+  .chat-container{
+    margin: 1px 5%;
+    padding-bottom: 40px;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (max-width: 450px){
+  .user-input{
+    margin: 0 0 0 30px;
+  }
+  .send-button{
+    margin: 0 30px 0 5px;
+  }
+  .chat-container{
+    padding-bottom: 40px;
+    margin-bottom: 12%;
+  }
+}
+@media screen and (max-width: 390px){
+.chat-container{
+  padding-bottom: 40px;
+  margin-bottom: 15%;
+}
+}
+@media screen and (max-width: 350px){
+  .user-input{
+    margin: 0 0 0 0;
+  }
+  .send-button{
+    margin: 0 0 0 5px;
+  }
+  .chat-container{
+    padding-bottom: 40px;
+    margin-bottom: 15%;
+  }
+}
